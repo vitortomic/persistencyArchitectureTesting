@@ -9,10 +9,17 @@ package domain;
  *
  */
 public class PrijavaIspita {
+	private Integer id;
 	private Ispit ispit;
 	private Student student;
 	private IspitniRok ispitniRok;
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public Ispit getIspit() {
 		return ispit;
 	}

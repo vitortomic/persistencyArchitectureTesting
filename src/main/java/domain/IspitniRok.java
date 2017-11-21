@@ -3,22 +3,22 @@
  */
 package domain;
 
-import java.util.Date;
+import enums.Rok;
 
 /**
  * @author vitor.tomic
  *
  */
 public class IspitniRok {
-	private Ispit ispit;
+	private Integer id;
 	private String godina;
-	private Date datum;
+	private Rok rok;
 	
-	public Ispit getIspit() {
-		return ispit;
+	public Integer getId() {
+		return id;
 	}
-	public void setIspit(Ispit ispit) {
-		this.ispit = ispit;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 	public String getGodina() {
 		return godina;
@@ -26,11 +26,11 @@ public class IspitniRok {
 	public void setGodina(String godina) {
 		this.godina = godina;
 	}
-	public Date getDatum() {
-		return datum;
+	public Rok getRok() {
+		return rok;
 	}
-	public void setDatum(Date datum) {
-		this.datum = datum;
+	public void setRok(Rok rok) {
+		this.rok = rok;
 	}
 	
 	
