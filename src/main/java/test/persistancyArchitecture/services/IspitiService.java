@@ -1,9 +1,9 @@
 /**
  * 
  */
-package services;
+package test.persistancyArchitecture.services;
 
-import domain.IspitniRok;
+import test.persistancyArchitecture.domain.IspitniRok;
 
 /**
  * @author vitor.tomic

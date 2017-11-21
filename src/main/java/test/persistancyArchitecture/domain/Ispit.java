@@ -1,7 +1,7 @@
 /**
  * 
  */
-package domain;
+package test.persistancyArchitecture.domain;
 
 import java.util.List;
 

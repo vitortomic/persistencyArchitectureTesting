@@ -1,9 +1,9 @@
 /**
  * 
  */
-package domain;
+package test.persistancyArchitecture.domain;
 
-import enums.Rok;
+import test.persistancyArchitecture.enums.Rok;
 
 /**
  * @author vitor.tomic
