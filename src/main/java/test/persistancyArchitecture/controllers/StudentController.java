@@ -14,7 +14,7 @@ import test.persistancyArchitecture.services.StudentService;
 @RestController
 public class StudentController {
 	
-	@Autowired
+	//@Autowired
 	private StudentService studentService;
 	
 	@RequestMapping(value="/student", method=RequestMethod.GET)
