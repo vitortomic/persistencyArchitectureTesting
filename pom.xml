@@ -52,8 +52,13 @@
 		<dependency>
     		<groupId>org.flywaydb</groupId>
     		<artifactId>flyway-core</artifactId>
-    		<version>4.2.0</version>
+    		<version>4.2.0</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
+		<dependency>
+            <groupId>org.sql2o</groupId>
+            <artifactId>sql2o</artifactId>
+            <version>1.5.4</version>
+        </dependency>
 	</dependencies>
 
 	<build>

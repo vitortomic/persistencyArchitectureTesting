@@ -14,13 +14,13 @@ import test.persistancyArchitecture.services.StudentService;
 @RestController
 public class StudentController {
 	
-	//@Autowired
+	@Autowired
 	private StudentService studentService;
 	
 	@RequestMapping(value="/student", method=RequestMethod.GET)
 	public Student getStudent(@RequestParam(value="index", required=true) String index){
 		Student student = studentService.findByIndex(index);
-		student.setProsek(studentService.getProsecnaOcena(student));
+		//student.setProsek(studentService.getProsecnaOcena(student));
 		return student;
 	}
 }
