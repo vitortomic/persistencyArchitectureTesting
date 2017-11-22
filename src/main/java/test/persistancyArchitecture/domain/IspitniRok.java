@@ -32,6 +32,4 @@ public class IspitniRok {
 	public void setRok(Rok rok) {
 		this.rok = rok;
 	}
-	
-	
 }

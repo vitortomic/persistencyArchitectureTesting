@@ -5,10 +5,14 @@ package test.persistancyArchitecture.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
 /**
  * @author vitor.tomic
  *
  */
+@JsonInclude(Include.NON_NULL)
 public class Ispit {
 	private Integer id;
 	private List<Profesor> predavaci;

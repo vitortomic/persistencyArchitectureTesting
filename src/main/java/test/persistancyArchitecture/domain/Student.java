@@ -5,6 +5,10 @@ package test.persistancyArchitecture.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import test.persistancyArchitecture.dto.StudentIspitDTO;
+
 /**
  * @author vitor.tomic
  *
@@ -14,7 +18,9 @@ public class Student {
 	private String ime;
 	private String prezime;
 	private String brojIndexa;
+	@JsonIgnore
 	private List<Ispit> ispiti;
+	private transient List<StudentIspitDTO> studentoviIspiti;
 	private transient Double prosek;
 	
 	public Integer getId() {
@@ -52,5 +58,11 @@ public class Student {
 	}
 	public void setProsek(Double prosek) {
 		this.prosek = prosek;
+	}
+	public List<StudentIspitDTO> getStudentoviIspiti() {
+		return studentoviIspiti;
+	}
+	public void setStudentoviIspiti(List<StudentIspitDTO> studentoviIspiti) {
+		this.studentoviIspiti = studentoviIspiti;
 	}
 }

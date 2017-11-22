@@ -4,7 +4,7 @@ create table Student (id int not null auto_increment, ime varchar(255), prezime 
 
 create table Ispit (id int not null auto_increment, ime varchar(255));
 
-create table IspitniRok (id int not null auto_increment, ispit_id int, godina varchar(255), rok enum('JANUAR','FEBRUAR','JUN','JUL','SEPTEMBER','OKTOBAR'), primary key (id));
+create table IspitniRok (id int not null auto_increment, godina varchar(255), rok enum('JANUAR','FEBRUAR','JUN','JUL','SEPTEMBER','OKTOBAR'), primary key (id));
 
 create table Ispit_Profesor(id int not null auto_increment, profesor_id int, ispit_id int, primary key(id), foreign key (profesor_id) 
 references Profesor (id), foreign key (ispit_id) references Ispit (id), unique key (profesor_id, ispit_id));

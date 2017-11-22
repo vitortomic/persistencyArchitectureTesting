@@ -15,6 +15,7 @@ import test.persistancyArchitecture.domain.Student;
 public interface StudentService {
 	public List<Ispit> getPolozeniIspiti(Student student);
 	public List<Ispit> getNepolozeniIspiti(Student student);
+	public List<Ispit> getAllIspiti(Student student);
 	public Double getProsecnaOcena(Student student);
 	public Student findByIndex(String index);
 }

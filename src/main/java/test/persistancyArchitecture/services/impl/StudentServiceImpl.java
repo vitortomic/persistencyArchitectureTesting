@@ -28,8 +28,7 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	@Override
 	public List<Ispit> getPolozeniIspiti(Student student) {
-		// TODO Auto-generated method stub
-		return null;
+		return studentRepository.getIspitsForStudent(student, true);
 	}
 
 	/* (non-Javadoc)
@@ -37,8 +36,12 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	@Override
 	public List<Ispit> getNepolozeniIspiti(Student student) {
-		// TODO Auto-generated method stub
-		return null;
+		return studentRepository.getIspitsForStudent(student, false);
+	}
+
+	@Override
+	public List<Ispit> getAllIspiti(Student student) {
+		return studentRepository.getIspitsForStudent(student, null);
 	}
 
 	/* (non-Javadoc)
@@ -46,8 +49,7 @@ public class StudentServiceImpl implements StudentService {
 	 */
 	@Override
 	public Double getProsecnaOcena(Student student) {
-		// TODO Auto-generated method stub
-		return null;
+		return studentRepository.getProsecnaOcena(student);
 	}
 
 	/* (non-Javadoc)
@@ -57,5 +59,5 @@ public class StudentServiceImpl implements StudentService {
 	public Student findByIndex(String index) {
 		return studentRepository.getStudent(index);
 	}
-
+	
 }
