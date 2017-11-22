@@ -26,7 +26,7 @@ public class StudentRepositoryImpl implements StudentRepository {
 	 */
 	@Override
 	public Student getStudent(String index) {
-		String sql = "SELECT * FROM faks.student where brojIndexa=:index";
+		String sql = "SELECT * FROM student where brojIndexa=:index";
 		try(Connection con = sql2o.open()){
 			return con.createQuery(sql)
 					.addParameter("index", index)

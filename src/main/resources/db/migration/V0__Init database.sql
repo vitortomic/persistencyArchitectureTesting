@@ -1,7 +1,3 @@
-create schema faks;
-
-use faks;
-
 create table Profesor(id int not null auto_increment, ime varchar(255), prezime varchar(255), primary key (id));
 
 create table Student (id int not null auto_increment, ime varchar(255), prezime varchar(255), brojIndexa varchar(255));

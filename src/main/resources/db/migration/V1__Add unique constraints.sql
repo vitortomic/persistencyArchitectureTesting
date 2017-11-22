@@ -1,5 +1,3 @@
-use faks;
-
 alter table Student
 add unique(brojIndexa);
 
