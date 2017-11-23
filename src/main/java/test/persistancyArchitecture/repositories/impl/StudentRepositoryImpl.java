@@ -17,6 +17,7 @@ import test.persistancyArchitecture.repositories.PolaganjeIspitaRepository;
 import test.persistancyArchitecture.repositories.StudentRepository;
 
 /**
+ * uses sql2o for database access
  * @author vitor.tomic
  *
  */

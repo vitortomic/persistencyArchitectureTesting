@@ -20,6 +20,7 @@ import test.persistancyArchitecture.dto.StudentIspitDTO;
 import test.persistancyArchitecture.repositories.PolaganjeIspitaRepository;
 
 /**
+ * uses sql2o for database access
  * @author vitor.tomic
  *
  */

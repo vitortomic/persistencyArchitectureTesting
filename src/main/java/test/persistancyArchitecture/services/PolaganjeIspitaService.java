@@ -15,4 +15,5 @@ import test.persistancyArchitecture.domain.Student;
 public interface PolaganjeIspitaService {
 	public PolaganjeIspita unesiOcenu(Student student, Profesor profesor, 
 			IspitniRok ispitniRok);
+	public PolaganjeIspita getPrijava(Integer id);
 }
