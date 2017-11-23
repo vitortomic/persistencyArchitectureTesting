@@ -21,4 +21,6 @@ public interface PolaganjeIspitaRepository {
 			IspitniRok ispitniRok);
 	
 	public List<StudentIspitDTO> findByStudent(Student student);
+	
+	public PolaganjeIspita findById(Integer id);
 }

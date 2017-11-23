@@ -3,8 +3,6 @@
  */
 package test.persistancyArchitecture.repositories.impl;
 
-import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +12,7 @@ import org.sql2o.Sql2o;
 
 import test.persistancyArchitecture.domain.IspitniRok;
 import test.persistancyArchitecture.domain.PolaganjeIspita;
+import test.persistancyArchitecture.domain.PrijavaIspita;
 import test.persistancyArchitecture.domain.Profesor;
 import test.persistancyArchitecture.domain.Student;
 import test.persistancyArchitecture.dto.StudentIspitDTO;
@@ -51,6 +50,27 @@ public class PolaganjeIspitaRepositoryImpl implements PolaganjeIspitaRepository 
 			return con.createQuery(sql)
 					.addParameter("studentId", student.getId())
 					.executeAndFetch(StudentIspitDTO.class);
+		}
+	}
+
+	/*
+	private Integer id;
+	private PrijavaIspita prijava;
+	private Integer ocena;
+	private Profesor ispitivac;
+	*/
+	
+	/*
+	 * (non-Javadoc)
+	 * @see test.persistancyArchitecture.repositories.PolaganjeIspitaRepository#findById(java.lang.Integer)
+	 */
+	@Override
+	public PolaganjeIspita findById(Integer id) {
+		String sql = "select id, prijavaispita_id as \"prijava.id\" from PolaganjeIspita where id=:id";
+		try(Connection con = sql2o.open()){
+			return con.createQuery(sql)
+					.addParameter("id", id)
+					.executeAndFetchFirst(PolaganjeIspita.class);
 		}
 	}
 

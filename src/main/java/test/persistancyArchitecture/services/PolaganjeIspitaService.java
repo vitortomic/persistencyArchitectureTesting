@@ -3,6 +3,8 @@
  */
 package test.persistancyArchitecture.services;
 
+import java.util.Optional;
+
 import test.persistancyArchitecture.domain.IspitniRok;
 import test.persistancyArchitecture.domain.PolaganjeIspita;
 import test.persistancyArchitecture.domain.Profesor;
@@ -15,5 +17,5 @@ import test.persistancyArchitecture.domain.Student;
 public interface PolaganjeIspitaService {
 	public PolaganjeIspita unesiOcenu(Student student, Profesor profesor, 
 			IspitniRok ispitniRok);
-	public PolaganjeIspita getPolaganje(Integer id);
+	public Optional<PolaganjeIspita> getPolaganje(Integer id);
 }

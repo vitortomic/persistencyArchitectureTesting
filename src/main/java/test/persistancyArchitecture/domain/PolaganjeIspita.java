@@ -9,7 +9,7 @@ package test.persistancyArchitecture.domain;
  */
 public class PolaganjeIspita {
 	private Integer id;
-	private PrijavaIspita prijava;
+	public PrijavaIspita prijava;
 	private Integer ocena;
 	private Profesor ispitivac;
 	
