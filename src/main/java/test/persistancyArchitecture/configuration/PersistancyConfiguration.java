@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.sql2o.Sql2o;
 
 import test.persistancyArchitecture.repositories.IspitniRokRepository;
+import test.persistancyArchitecture.repositories.PrijavaIspitaRepository;
 
 /**
  * @author vitor.tomic
@@ -45,5 +46,10 @@ public class PersistancyConfiguration {
 	@Bean
 	public IspitniRokRepository ispitniRokRepository() {
 		return dbi.onDemand(IspitniRokRepository.class);
+	}
+	
+	@Bean 
+	public PrijavaIspitaRepository prijavaIspitaRepository() {
+		return dbi.onDemand(PrijavaIspitaRepository.class);
 	}
 }

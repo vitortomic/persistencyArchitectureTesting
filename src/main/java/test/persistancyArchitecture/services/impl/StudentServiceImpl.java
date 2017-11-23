@@ -4,6 +4,7 @@
 package test.persistancyArchitecture.services.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -56,8 +57,8 @@ public class StudentServiceImpl implements StudentService {
 	 * @see test.persistancyArchitecture.services.StudentService#findByIndex(java.lang.String)
 	 */
 	@Override
-	public Student findByIndex(String index) {
-		return studentRepository.getStudent(index);
+	public Optional<Student> findByIndex(String index) {
+		return Optional.ofNullable(studentRepository.getStudent(index));
 	}
 	
 }

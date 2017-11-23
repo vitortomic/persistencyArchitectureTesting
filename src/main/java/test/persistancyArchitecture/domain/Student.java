@@ -23,6 +23,18 @@ public class Student {
 	private transient List<StudentIspitDTO> studentoviIspiti;
 	private transient Double prosek;
 	
+	public Student() {
+		
+	}
+	
+	public Student(Integer id, String ime, String prezime, String brojIndexa) {
+		super();
+		this.id = id;
+		this.ime = ime;
+		this.prezime = prezime;
+		this.brojIndexa = brojIndexa;
+	}
+	
 	public Integer getId() {
 		return id;
 	}

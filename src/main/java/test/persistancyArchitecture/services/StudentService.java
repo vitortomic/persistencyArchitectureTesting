@@ -4,6 +4,7 @@
 package test.persistancyArchitecture.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import test.persistancyArchitecture.domain.Ispit;
 import test.persistancyArchitecture.domain.Student;
@@ -17,5 +18,5 @@ public interface StudentService {
 	public List<Ispit> getNepolozeniIspiti(Student student);
 	public List<Ispit> getAllIspiti(Student student);
 	public Double getProsecnaOcena(Student student);
-	public Student findByIndex(String index);
+	public Optional<Student> findByIndex(String index);
 }

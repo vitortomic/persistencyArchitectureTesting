@@ -40,9 +40,10 @@ public class StudentRepositoryImpl implements StudentRepository {
 			Student student = con.createQuery(sql)
 					.addParameter("index", index)
 					.executeAndFetchFirst(Student.class);
-		
-			student.setProsek(getProsecnaOcena(student));
-			student.setStudentoviIspiti(polaganjeIspitaRepository.findByStudent(student));
+			if(student != null) {
+				student.setProsek(getProsecnaOcena(student));
+				student.setStudentoviIspiti(polaganjeIspitaRepository.findByStudent(student));
+			}
 			return student;
 		}
 	}

@@ -14,6 +14,18 @@ public class PrijavaIspita {
 	private Student student;
 	private IspitniRok ispitniRok;
 	
+	public PrijavaIspita(Integer id, Ispit ispit, Student student, IspitniRok ispitniRok) {
+		super();
+		this.id = id;
+		this.ispit = ispit;
+		this.student = student;
+		this.ispitniRok = ispitniRok;
+	}
+	
+	public PrijavaIspita() {
+		
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -38,7 +50,5 @@ public class PrijavaIspita {
 	public void setIspitniRok(IspitniRok ispitniRok) {
 		this.ispitniRok = ispitniRok;
 	}
-	
-	
 	
 }

@@ -28,7 +28,7 @@ public class PolaganjeIspitaServiceImpl implements PolaganjeIspitaService {
 	 * @see test.persistancyArchitecture.services.PolaganjeIspitaService#getPrijava(java.lang.Integer)
 	 */
 	@Override
-	public PolaganjeIspita getPrijava(Integer id) {
+	public PolaganjeIspita getPolaganje(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

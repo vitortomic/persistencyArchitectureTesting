@@ -16,6 +16,7 @@ import test.persistancyArchitecture.dto.StudentIspitDTO;
  *
  */
 public interface PolaganjeIspitaRepository {
+	
 	public PolaganjeIspita create(Student student, Profesor profesor, 
 			IspitniRok ispitniRok);
 	

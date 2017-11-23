@@ -18,6 +18,14 @@ public class Ispit {
 	private List<Profesor> predavaci;
 	private String ime;
 	
+	public Ispit() {
+		
+	}
+	public Ispit(Integer id, String ime) {
+		super();
+		this.id = id;
+		this.ime = ime;
+	}
 	public Integer getId() {
 		return id;
 	}

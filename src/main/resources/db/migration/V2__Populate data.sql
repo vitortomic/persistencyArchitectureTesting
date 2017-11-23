@@ -1,4 +1,4 @@
-insert into student values (1,'vitor','tomic','314/09/i');
+insert into student values (1,'vitor','tomic','314');
 insert into ispit values (1,'teorija sistema');
 insert into student_ispit values (1,1,1);
 insert into profesor values (1,'bratislav','petrovic');
